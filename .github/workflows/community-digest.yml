@@ -1,0 +1,70 @@
+name: Community Digest
+
+on:
+  schedule:
+    # Run every Sunday at 12:00 UTC
+    - cron: "0 12 * * 0"
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  create-digest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: Install dependencies
+        working-directory: scripts
+        run: pnpm install
+
+      - name: Generate digest
+        id: digest
+        working-directory: scripts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          OUTPUT=$(pnpm fetch:community 2>&1)
+          echo "output<<EOF" >> $GITHUB_OUTPUT
+          echo "$OUTPUT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Create digest issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const output = `${{ steps.digest.outputs.output }}`;
+
+            // Check if there are notable discussions
+            if (output.includes("No notable discussions")) {
+              console.log("No notable discussions this week, skipping issue creation.");
+              return;
+            }
+
+            // Extract the digest content (between the dashes)
+            const digestMatch = output.match(/─{50}\n([\s\S]*?)\n─{50}/);
+            const digest = digestMatch ? digestMatch[1] : output;
+
+            const today = new Date().toISOString().split('T')[0];
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Weekly Community Digest - ${today}`,
+              body: `${digest}\n\n---\n\n**Action needed:** Review discussions above and promote valuable ones to the docs.\n\nLabel: \`needs-curation\``,
+              labels: ['needs-curation', 'community']
+            });
