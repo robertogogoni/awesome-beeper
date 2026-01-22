@@ -1,0 +1,58 @@
+title: "[Tip] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing a discovery! Fill out this template so we can add it to the docs.
+
+  - type: textarea
+    id: discovery
+    attributes:
+      label: What did you discover?
+      description: Brief description of your tip or discovery
+      placeholder: "I found that you can..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: source
+    attributes:
+      label: Source
+      description: Where did you find/figure this out?
+      options:
+        - label: Personal testing
+        - label: Developer Community chat
+        - label: Reddit r/beeper
+        - label: GitHub issue
+        - label: Other (explain in details)
+
+  - type: checkboxes
+    id: applies-to
+    attributes:
+      label: Applies to
+      description: What does this tip apply to?
+      options:
+        - label: Desktop App
+        - label: SDK (@beeper/desktop-api)
+        - label: Bridges
+        - label: Other
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Steps, code snippets, screenshots
+      placeholder: |
+        1. Go to...
+        2. Click...
+        3. Result:
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Links to related discussions, issues, docs
+      placeholder: "https://..."

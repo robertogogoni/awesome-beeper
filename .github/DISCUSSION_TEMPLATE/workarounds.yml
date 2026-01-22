@@ -1,0 +1,42 @@
+title: "[Workaround] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Found a workaround for a known issue? Share it here!
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: What issue does this work around?
+      description: Describe the problem
+      placeholder: "When I try to X, Y happens..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: The workaround
+      description: Step-by-step solution
+      placeholder: |
+        1. Do this...
+        2. Then this...
+        3. Problem solved!
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: tested
+    attributes:
+      label: Testing
+      options:
+        - label: I have personally tested this workaround
+          required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Links to related issues, discussions
