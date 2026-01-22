@@ -1,0 +1,8 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Awesome Beeper Updates",
+  "home_page_url": "https://github.com/robertogogoni/awesome-beeper",
+  "feed_url": "https://raw.githubusercontent.com/robertogogoni/awesome-beeper/main/feeds/releases.json",
+  "description": "Latest updates from the Beeper ecosystem",
+  "items": []
+}

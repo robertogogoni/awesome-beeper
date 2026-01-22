@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Awesome Beeper Updates</title>
+    <link>https://github.com/robertogogoni/awesome-beeper</link>
+    <description>Latest updates from the Beeper ecosystem</description>
+    <language>en</language>
+    <lastBuildDate>Tue, 21 Jan 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://raw.githubusercontent.com/robertogogoni/awesome-beeper/main/feeds/releases.xml" rel="self" type="application/rss+xml"/>
+  </channel>
+</rss>
