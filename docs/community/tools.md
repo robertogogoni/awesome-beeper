@@ -15,7 +15,10 @@
 
 ## Community Tools
 
-<!-- Add tools as they're discovered -->
+| Tool | Description | Link |
+|------|-------------|------|
+| update-beeper | Self-healing Beeper updater for Linux (AUR + direct download, pacman desync prevention) | [GitHub](https://github.com/beeper-community/update-beeper) |
+| Beeper KB (MCP) | Knowledge base MCP server for Beeper documentation | [GitHub](https://github.com/robertogogoni/beeper-kb) |
 
 *Know a tool? [Share it!](https://github.com/robertogogoni/awesome-beeper/discussions/new?category=tips-discoveries)*
 

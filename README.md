@@ -8,10 +8,10 @@
 
 ## 📊 Status
 
-| Component | Latest | Updated | Feed |
-|-----------|--------|---------|------|
-| Desktop App | `TBD` | - | [RSS](feeds/releases.xml) |
-| SDK (`@beeper/desktop-api`) | `TBD` | - | [JSON](feeds/releases.json) |
+| Component | Feed |
+|-----------|------|
+| Desktop App | [RSS](feeds/releases.xml) |
+| SDK (`@beeper/desktop-api`) | [JSON](feeds/releases.json) |
 
 <sub>Auto-updated daily · [How this works](docs/automation.md)</sub>
 
@@ -21,6 +21,7 @@
 
 - [Desktop App](#-desktop-app)
 - [SDK & API](#-sdk--api)
+- [Tools](#-tools)
 - [Bridges](#-bridges)
 - [Community](#-community)
 - [Contributing](#-contributing)
@@ -29,15 +30,7 @@
 
 ## 🖥️ Desktop App
 
-**Current Version:** `TBD` · [Full Changelog](docs/desktop-app/changelog.md)
-
-### Recent Updates
-
-| Version | Date | Highlights |
-|---------|------|------------|
-| - | - | Coming soon |
-
-→ [Features](docs/desktop-app/features.md) · [Known Issues & Workarounds](docs/desktop-app/known-issues.md)
+[Full Changelog](docs/desktop-app/changelog.md) · [Features](docs/desktop-app/features.md) · [Known Issues & Workarounds](docs/desktop-app/known-issues.md)
 
 ---
 
@@ -46,6 +39,18 @@
 **`@beeper/desktop-api`** · [npm](https://npmjs.com/package/@beeper/desktop-api) · [GitHub](https://github.com/beeper/desktop-api-js)
 
 → [Changelog](docs/sdk/changelog.md) · [Migration Guides](docs/sdk/migration-guides/) · [Examples](docs/sdk/examples.md)
+
+---
+
+## 🛠️ Tools
+
+| Tool | Description | Link |
+|------|-------------|------|
+| **update-beeper** | Self-healing Beeper updater for Linux with AUR fallback and pacman desync prevention | [GitHub](https://github.com/beeper-community/update-beeper) |
+| **Beeper KB** | MCP server providing Beeper knowledge base for AI assistants | [GitHub](https://github.com/robertogogoni/beeper-kb) |
+| **Desktop API SDK** | TypeScript SDK for building Beeper integrations | [npm](https://npmjs.com/package/@beeper/desktop-api) |
+
+→ [All Community Tools](docs/community/tools.md)
 
 ---
 
