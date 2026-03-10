@@ -20,9 +20,13 @@
 ## 📋 Contents
 
 - [Desktop App](#-desktop-app)
-- [SDK & API](#-sdk--api)
-- [Tools](#-tools)
+- [Official SDKs](#-official-sdks)
+- [CLI Tools](#-cli-tools)
+- [MCP Servers](#-mcp-servers)
+- [AI & Agents](#-ai--agents)
 - [Bridges](#-bridges)
+- [Themes](#-themes)
+- [Tools](#-tools)
 - [Community](#-community)
 - [Contributing](#-contributing)
 
@@ -34,29 +38,109 @@
 
 ---
 
-## 📦 SDK & API
+## 📦 Official SDKs
 
-**`@beeper/desktop-api`** · [npm](https://npmjs.com/package/@beeper/desktop-api) · [GitHub](https://github.com/beeper/desktop-api-js)
+Auto-generated from the [Desktop API OpenAPI spec](https://github.com/beeper/desktop-api-cli).
 
-→ [Changelog](docs/sdk/changelog.md) · [Migration Guides](docs/sdk/migration-guides/) · [Examples](docs/sdk/examples.md)
+| SDK | Language | ⭐ | Link |
+|-----|----------|----|------|
+| **desktop-api-js** | TypeScript | 21 | [GitHub](https://github.com/beeper/desktop-api-js) · [npm](https://npmjs.com/package/@beeper/desktop-api) |
+| **desktop-api-python** | Python | 7 | [GitHub](https://github.com/beeper/desktop-api-python) |
+| **desktop-api-go** | Go | 5 | [GitHub](https://github.com/beeper/desktop-api-go) |
+| **desktop-api-php** | PHP | — | [GitHub](https://github.com/beeper/desktop-api-php) |
+| **desktop-api-sql** | PLpgSQL | — | [GitHub](https://github.com/beeper/desktop-api-sql) |
+
+> [Changelog](docs/sdk/changelog.md) · [Migration Guides](docs/sdk/migration-guides/) · [Examples](docs/sdk/examples.md)
 
 ---
 
-## 🛠️ Tools
+## ⌨️ CLI Tools
 
-| Tool | Description | Link |
-|------|-------------|------|
-| **update-beeper** | Self-healing Beeper updater for Linux with AUR fallback and pacman desync prevention | [GitHub](https://github.com/beeper-community/update-beeper) |
-| **Beeper KB** | MCP server providing Beeper knowledge base for AI assistants | [GitHub](https://github.com/robertogogoni/beeper-kb) |
-| **Desktop API SDK** | TypeScript SDK for building Beeper integrations | [npm](https://npmjs.com/package/@beeper/desktop-api) |
+| Tool | ⭐ | Language | Description |
+|------|----|----------|-------------|
+| [beepctl](https://github.com/blqke/beepctl) | 30 | TypeScript | CLI for messaging from terminal |
+| [beeper-cli](https://github.com/KrauseFx/beeper-cli) | 25 | Go | Read-only browse/search chat history |
+| [BeeperPS](https://github.com/AndrewPla/BeeperPS) | 8 | PowerShell | PowerShell module for Beeper API |
+| [desktop-api-cli](https://github.com/beeper/desktop-api-cli) | 5 | Go | Official Beeper CLI (v0.2.0) `[official]` |
+| [beeper-cli](https://github.com/foeken/beeper-cli) | 2 | Go | CLI for Desktop API |
+| [beeper-api-cli](https://github.com/nerveband/beeper-api-cli) | — | Go | Cross-platform CLI |
+| [beeper-messaging-tools](https://github.com/mimen/beeper-messaging-tools) | 1 | TypeScript | Web app for Desktop API |
 
-→ [All Community Tools](docs/community/tools.md)
+---
+
+## 🤖 MCP Servers
+
+Model Context Protocol servers for AI assistant integration.
+
+| Server | ⭐ | Description |
+|--------|----|-------------|
+| [desktop-api-mcp](https://github.com/beeper/desktop-api-mcp) | 3 | Official Claude Desktop Extension `[official]` |
+| [mcp-android](https://github.com/beeper/mcp-android) | 8 | Android MCP server `[official]` |
+| [Beeper KB](https://github.com/robertogogoni/beeper-kb) | — | Knowledge base MCP server for Beeper docs |
+| [poke-beeper-proxy](https://github.com/keithah/poke-beeper-proxy) | 1 | macOS tunneling proxy for Desktop API |
+| [beeper-mcp](https://github.com/mimen/beeper-mcp) | — | Python MCP server |
+
+---
+
+## 🧠 AI & Agents
+
+| Project | Description |
+|---------|-------------|
+| [agentremote](https://github.com/beeper/agentremote) | Official AI agent platform — Codex, OpenClaw, and OpenCode bridges `[official]` |
+| [chat-adapter-matrix](https://github.com/beeper/chat-adapter-matrix) | Vercel Chat SDK adapter for all bridged networks `[official]` |
+| [CodeBeep](https://github.com/Mihai-Codes/CodeBeep) | AI coding agent via Matrix/Beeper + OpenCode |
+| [linkedin-spam-filter](https://github.com/manthis/linkedin-spam-filter) | OpenClaw skill for LinkedIn spam filtering |
 
 ---
 
 ## 🌉 Bridges
 
-> 🚧 Coming soon — [Help us document bridges!](https://github.com/robertogogoni/awesome-beeper/discussions/new?category=tips-discoveries)
+Bridges connect Beeper to external chat networks via the Matrix protocol.
+
+### Official Bridges
+
+See [Beeper's supported networks](https://www.beeper.com/) for the full list of officially maintained bridges.
+
+### Community Bridges
+
+| Bridge | ⭐ | Network | Language |
+|--------|----|---------|----------|
+| [imessage v2](https://github.com/lrhodin/imessage) | 23 | iMessage | Rust |
+| [matrix-line-messenger](https://github.com/highesttt/matrix-line-messenger) | 14 | LINE | — |
+| [snapchat-bridge](https://github.com/lalomorales22/snapchat-bridge) | 1 | Snapchat | — |
+| [zalo-beeper-bridge](https://github.com/lequocbinh04/zalo-beeper-bridge) | — | Zalo | — |
+
+> [Full Bridges Documentation](docs/bridges/README.md)
+
+---
+
+## 🎨 Themes
+
+| Theme | ⭐ | Description |
+|-------|----|-------------|
+| [themes](https://github.com/beeper/themes) | 156 | Official community themes (CSS) `[official]` |
+| [Metrology-for-Beeper](https://github.com/Madelena/Metrology-for-Beeper) | 41 | Flat Metro design |
+| [beeper-custom-css](https://github.com/clins1994/beeper-custom-css) | 11 | Custom CSS styles |
+| [beeper-midnight](https://github.com/JaxonWright/beeper-midnight) | 8 | Pitch-black dark theme |
+| [beeper-icons-theme](https://github.com/MoralesJonathan/beeper-icons-theme) | 5 | Full color social media icons |
+| [Beeper-WinUI-Theme](https://github.com/highesttt/Beeper-WinUI-Theme) | 4 | WinUI 3 theme |
+
+---
+
+## 🛠️ Tools
+
+| Tool | ⭐ | Description |
+|------|----|-------------|
+| [docker-beeper](https://github.com/zachatrocity/docker-beeper) | 56 | Self-hosted Beeper Desktop in browser |
+| [update-beeper](https://github.com/beeper-community/update-beeper) | — | Self-healing Linux updater with AUR fallback |
+| [Beeper-install](https://github.com/nzxlabs/Beeper-install) | 8 | Easy-install scripts |
+| [beepex](https://github.com/johnburnett/beepex) | 3 | Export Beeper chat history |
+| [beeper-chat-monitor](https://github.com/aaamgi/beeper-chat-monitor) | 3 | Windows tray chat monitor |
+| [beeper-message-sync](https://github.com/prime-radiant-inc/beeper-message-sync) | 2 | Sync chat history to JSONL |
+| [beeper-wsl-proxy](https://github.com/BosTheCoder/beeper-wsl-proxy) | — | WSL proxy for Desktop API |
+| [Raycast Extension](https://github.com/beeper/raycast) | — | Search/manage Beeper from Raycast `[official]` |
+
+> [All Community Tools](docs/community/tools.md)
 
 ---
 
@@ -64,9 +148,9 @@
 
 Curated tips, tricks, and discoveries from the Beeper community.
 
-→ [Tips & Tricks](docs/community/tips-and-tricks.md)
-→ [Developer Chat Highlights](docs/community/developer-chat/)
-→ [Third-Party Tools](docs/community/tools.md)
+> [Tips & Tricks](docs/community/tips-and-tricks.md)
+> [Developer Chat Highlights](docs/community/developer-chat/)
+> [Third-Party Tools](docs/community/tools.md)
 
 ### Source Tags
 
